@@ -1,0 +1,17 @@
+public class SumOfSquares {
+	public static void main(String[] args) {
+		int n = 20;
+		SquareSum sum = new SquareSum();
+		int result = sum.FindSum(n);
+		System.out.println("Sum of squares is: " + result);
+	}
+}
+class SquareSum {
+	int FindSum(int n) {
+		int s = 0;
+		for (int i = 1; i <= n; i++) {
+			s = s + (i * i);
+		}
+		return s;
+	}
+}
